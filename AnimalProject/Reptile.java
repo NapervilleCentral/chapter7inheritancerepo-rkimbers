@@ -19,7 +19,7 @@ public abstract class Reptile extends Animal
 		//happens automatic
 		//super();
 
-		super("reptile");
+		//super("reptile"); //calls constructor of parent class
 		//type = "reptile"; // private data will cause error
 		numberOfLegs = 0;
 	}
@@ -50,7 +50,7 @@ public abstract class Reptile extends Animal
 
   /**-----------------------------------------------------------------
      * This method should return a string indicating how this Reptile moves.
-     /*/
+     /*///abstract classes do not have to instantiate abstract methods (move())
   //public String move()
   //{
 	//  return "crawl";
