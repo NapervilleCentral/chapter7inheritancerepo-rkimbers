@@ -13,7 +13,8 @@ public class Snake extends Reptile
    //-----------------------------------------------------------------
    public Snake( int snakeLength)
    {
-      super(0);
+      //super(0); //calls parent constructor
+      //type = "reptile"; //type is private in animal, cannot access
       length = snakeLength;
    }
 
@@ -44,7 +45,7 @@ public class Snake extends Reptile
    //-----------------------------------------------------------------
    // Returns a string indicating how this snake moves.
    //-----------------------------------------------------------------
-   public String move()
+  public String move()
    {
       return "slither";
    }
