@@ -11,7 +11,9 @@ public class AnimalsClient
 
       //Animal bob = new Animal("Mammal");
       //System.out.println(bob  );
-
+      
+      Snake Putin = new Snake(10);
+      System.out.println(Putin.getType());
 
       //Reptile sue = new Reptile();
       //System.out.println(sue.getType()  );
