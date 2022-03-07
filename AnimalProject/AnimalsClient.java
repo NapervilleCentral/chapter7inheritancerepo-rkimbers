@@ -19,9 +19,20 @@ public class AnimalsClient
       //System.out.println(sue.getType()  );
       //System.out.println( sue );
 
+      Cobra Vlodo = new Cobra();
+      
+      System.out.println(Putin);
+      
+      Vlodo.bite(Putin);
+      
+      System.out.println(Putin);
+      
 
-
+       Platypus RyanJr = new Platypus();
        
+       RyanJr.bite();
+       
+       System.out.println(RyanJr);
        
        
      /*
