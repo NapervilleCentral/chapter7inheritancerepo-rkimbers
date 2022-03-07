@@ -13,4 +13,13 @@ public class Cobra extends Snake
         super(4);
         poison = true;
     }
+    
+    public void bite(Animal obj){
+        obj.poisoned = true;
+    }
+    
+    public String toString(){
+        
+        return super.toString() + "Cobras have venom";
+    }
 }
