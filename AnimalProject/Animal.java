@@ -7,6 +7,7 @@
 public  abstract class Animal
 {
    private String type;
+   protected boolean poisoned;
    
 
     public Animal()
@@ -46,6 +47,13 @@ public  abstract class Animal
    public String toString()
    {
       String data = "My type is " + type;
+      
+      if(poisoned){
+         data += " and I am poisoned ";
+        }
+      else{
+         data += " and I am not poisoned "; 
+        }
       
         
       return data;  
