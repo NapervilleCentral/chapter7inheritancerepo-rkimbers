@@ -14,16 +14,16 @@ public class Pets
    {
 
 	  Pet Rex = new Dog("Rex",50);
-	  System.out.println(Rex.speak()  );
+	  System.out.println("I go: "+Rex.speak());
 
 	  Rex = new Cat("Lester");
-	  System.out.println(Rex.speak()  );
+	  System.out.println("I go: "+Rex.speak());
 
       Dog fido = new Dog("Fido", 45);
 
       Cat boots = new Cat("PUSSinBOOTS");
 
-/*
+
 	  System.out.println();
 	  System.out.println(boots);
 	  System.out.println(boots.getName() + " says " + boots.speak());
@@ -54,8 +54,10 @@ public class Pets
 
 
    	//Snake sam = new Snake("Sam", 30);
-    Poodle hadley = new Poodle(65,"Cream", "Hadley");
-/**/	Lab Boston = new Lab(65,"Cream", "Boston");
+      //Poodle hadley = new Poodle(65,"Cream", "Hadley");
+	Lab Boston = new Lab(65,"Retriever", "Lambeau");
+	
+	System.out.println(Boston);
 
 
 
@@ -74,21 +76,21 @@ public class Pets
                          + fido.move());
 
 
-	 System.out.println(hadley);
-	 System.out.println(hadley.getName() + " says " + hadley.speak());
-	 System.out.println(hadley.move() + " " + hadley.getName() + " "
-				 + hadley.move());
+	// System.out.println(hadley);
+	// System.out.println(hadley.getName() + " says " + hadley.speak());
+	// System.out.println(hadley.move() + " " + hadley.getName() + " "
+	//			 + hadley.move());
 
 
 
 
-/*
+
       System.out.println();
-      System.out.println(sam);
-      System.out.println(sam.getName() + " says " + sam.speak());
-      System.out.println(sam.move() + " " + sam.getName() + " "
-                         + sam.move());
-/**/
+     // System.out.println(sam);
+    //  System.out.println(sam.getName() + " says " + sam.speak());
+    //  System.out.println(sam.move() + " " + sam.getName() + " "
+     //                    + sam.move());
+
 
 
 

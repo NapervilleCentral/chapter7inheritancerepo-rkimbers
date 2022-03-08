@@ -12,15 +12,15 @@ public class Platypus extends Mammal
         laysEggs = true;
     }
     
-    public void bite(){
-        poisoned = true;
+    public void bite(Animal o){
+        o.poisoned = true;
     }
     
     public String move(){
-        return "test";
+        return "paddle";
     }
     
     public String toString(){
-        return "is platypus poisoned: "+poisoned;
+        return super.toString() + " is platypus poisoned: "+poisoned;
     }
 }

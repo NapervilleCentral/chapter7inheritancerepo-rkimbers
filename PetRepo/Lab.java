@@ -25,7 +25,7 @@ public class Lab extends Dog
     }
     public String toString()
     {
-        retrun (super.toString() + "and is a "+ color + " labrador");
+        return (super.toString() + " and am a "+ color + " lab");
     }
 
 }

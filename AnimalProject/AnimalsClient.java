@@ -30,7 +30,7 @@ public class AnimalsClient
 
        Platypus RyanJr = new Platypus();
        
-       RyanJr.bite();
+       Vlodo.bite(RyanJr);
        
        System.out.println(RyanJr);
        

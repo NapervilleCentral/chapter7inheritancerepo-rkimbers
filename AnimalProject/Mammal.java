@@ -7,7 +7,11 @@
  */
 public abstract class Mammal extends Animal
 {
-    protected boolean warmBlooded = true;
+    private boolean warmBlooded = true;
     protected boolean hasFur;
     protected boolean laysEggs;
+    
+    public String toString(){
+        return "I AM A MAMMAL";
+    }
 }
