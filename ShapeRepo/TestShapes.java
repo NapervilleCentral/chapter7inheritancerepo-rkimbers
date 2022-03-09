@@ -1,5 +1,6 @@
 import TurtleGraphics.*;
 import java.awt.Color;
+import java.util.Scanner;
 
 
 public class TestShapes
@@ -18,8 +19,9 @@ public static void main(String [] args)
 	System.out.println(s1);
 
 	// pause until the user is ready to continue
+	Scanner in = new Scanner(System.in);
 	System.out.print ("Press any key to continue");
-      int value = Keyboard.readInt();
+      int value = in.nextInt();
 
     //erase the circle
     p.setColor (Color.white);
