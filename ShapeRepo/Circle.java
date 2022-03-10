@@ -7,23 +7,24 @@ import TurtleGraphics.Pen;
 
 public class Circle extends Shape
 {
-    private double radius;
+    protected double radius;
 
     
-    public Circle(int x, int y, int r){
+    public Circle(double x, double y, double r){
         super(x,y);
         radius = r;
     }
     
     
     public void move(double xLoc, double yLoc){
-        
+        xPos+=xLoc;
+        yPos+=yLoc;
     }
     
     public void stretchby (double factor){
-        
+        xPos*=factor;
+        yPos*=factor;
     }
-        
         
     
     public void draw(Pen p)
@@ -42,16 +43,20 @@ public class Circle extends Shape
     }
     
     public double getArea(){
-     return 1.1;   
+     return Math.PI*Math.pow(radius,2);   
     }
 
     public double getRadius()
     { return radius;   
     }
+    
+    public double getDiameter()
+    { return radius*2;   
+    }
 
     public String toString()
     {
-        return "hi";
+        return "Area: "+getArea()+" Radius"+getRadius();
     }
 
 

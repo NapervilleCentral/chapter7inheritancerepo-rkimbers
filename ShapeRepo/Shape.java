@@ -18,9 +18,10 @@ public abstract class Shape
     public double getYpos()
     { return yPos;
     }
-    //public void move(double xLoc, double yLoc);
+    
+    public abstract void move(double xLoc, double yLoc);
     // increase the size by the factor
-    //public void stretchby (double factor);
+    public abstract void stretchby (double factor);
 
     public abstract double getArea();
 

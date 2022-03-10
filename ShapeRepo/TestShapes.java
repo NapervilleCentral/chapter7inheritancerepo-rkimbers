@@ -29,8 +29,8 @@ public static void main(String [] args)
 
     //move the circle, change size and redraw
     p.setColor (Color.green);
-    //s1.move(30,30);
-    //s1.stretchby(2);
+    s1.move(30,30);
+    s1.stretchby(2);
     s1.draw(p);
 
     w1.draw(p);
