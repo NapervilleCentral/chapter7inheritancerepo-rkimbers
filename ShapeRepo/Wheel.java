@@ -1,6 +1,4 @@
 import TurtleGraphics.Pen;
-
-import java.lang.Math;
 /**
  * Write a description of class Wheel here.
  *
@@ -13,13 +11,14 @@ public class Wheel extends Circle
     
     public Wheel(double x, double y, double r, double s){
         super(x,y,r);
-        this.spokes = s;
+        spokes = s;
         
         
     }
     
     public void draw(Pen p){
-        double increment = 360/spokes;
+        double increment = (double)360/spokes;
+        double i2 = increment;
         double side = 2.0 * Math.PI * radius / 120.0;
         p.up();
         p.move (xPos + radius, yPos - side / 120.0);
@@ -33,9 +32,11 @@ public class Wheel extends Circle
             if(Math.abs(increment - i) < 1){
                 p.turn(90);
                 p.move(radius);
-                p.turn(90);
+                p.turn(180);
                 p.move(radius);
-
+                p.move(90);
+                
+                increment += i2;
             }
         }
         }
