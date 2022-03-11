@@ -6,8 +6,8 @@ public abstract class Shape
 
     public Shape (double x, double y)
     {
-        this.xPos = x;
-        this.yPos = y;
+        xPos = x;
+        yPos = y;
     }
 
     // you must write these methods here
