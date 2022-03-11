@@ -12,23 +12,24 @@ public class Triangle extends Shape
     
     public Triangle(double x, double y,double scale){
         super(x,y);
-        scale = scale;
+        this.scale = scale;
         
     }
     
     public void draw(Pen p)
     {
         //double side = 2.0 * Math.PI * radius / 120.0;
-       p.up();
-        //p.move (xPos + radius, yPos - side / 120.0);
-        p.setDirection (90);
-        p.down();
+       
+       p.home();
         
-        p.turn(315);
+       p.move (xPos,yPos);
+       
+        
+        p.turn(45);
         p.move(scale);
         p.turn(315);
         p.move(scale);
-        p.turn(315);
+        p.turn(45);
         p.move(scale);
 
     }
