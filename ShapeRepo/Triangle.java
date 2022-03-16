@@ -22,14 +22,11 @@ public class Triangle extends Shape
        
        p.home();
         
-       p.move (xPos,yPos);
-       
-        
-        p.turn(45);
+
         p.move(scale);
-        p.turn(315);
+        p.turn(120);
         p.move(scale);
-        p.turn(45);
+        p.turn(120);
         p.move(scale);
 
     }
