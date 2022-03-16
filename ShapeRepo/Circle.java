@@ -29,6 +29,8 @@ public class Circle extends Shape
     
     public void draw(Pen p)
     {
+        p.home();
+        
         double side = 2.0 * Math.PI * radius / 120.0;
         p.up();
         p.move (xPos + radius, yPos - side / 120.0);
