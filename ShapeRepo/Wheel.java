@@ -29,14 +29,15 @@ public class Wheel extends Circle
             p.move(side);
             p.turn(3);
             
-            if(Math.abs(increment - i) < 1){
+            if(Math.abs(increment - i) <= 1){
+               
                 p.turn(90);
                 p.move(radius);
                 p.turn(180);
                 p.move(radius);
-                p.move(90);
+                p.turn(90);
                 
-                increment += i2;
+                increment+=i2;
             }
         }
         }
