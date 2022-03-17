@@ -10,7 +10,7 @@ public static void main(String [] args)
     //declare and instantiate a pen and a circle
     StandardPen p = new StandardPen();
     Shape s1 = new Circle (20,20,20);
-    Wheel w1 = new Wheel (30,30,50,16);
+    Wheel w1 = new Wheel (30,30,50,49);
     Triangle t1 = new Triangle(10,10,100);
 
     //draw the circle
@@ -38,10 +38,10 @@ public static void main(String [] args)
 
    System.out.print ("Press any key to continue");
    value = in.next();
-   
+
    p.setColor (Color.white);
    w1.draw(p);
-   
+
    p.setColor (Color.red);
    t1.draw(p);
 
