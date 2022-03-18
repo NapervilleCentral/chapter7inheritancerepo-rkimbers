@@ -34,10 +34,13 @@ public class BugRunner
         ActorWorld world = new ActorWorld();
         
         BoxBug bob = new BoxBug(3);
+        SpiralBug ryan = new SpiralBug(10);
+        ZBug Z = new ZBug(10);
         
         //world.add(new Location(7,2),bob);
         //world.add(new LineBug());
-        world.add(new SpiralBug());
+        //world.add(new Location(5,5),ryan);
+        world.add(new Location(0,0),Z);
         //world.add(new Bug());
         //world.add(new Rock());
         world.show();

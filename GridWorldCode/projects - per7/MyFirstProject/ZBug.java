@@ -9,30 +9,30 @@ import java.awt.Color;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class SpiralBug extends Bug
+public class ZBug extends Bug
 {
-    private int steps;
+    private int steps = 0;
     private int sideLength = 2;
     
     
     /**
      * @param len of side of box
      */
-    public SpiralBug(int k){
+    public ZBug(int k){
         super(Color.yellow);
         sideLength = k-1;
-       
     }
     public void act(){
         if (steps < sideLength && canMove()){
             move();
-            steps++;
+            //steps++;
         }
         else{
             turn();
             turn();
-            steps = 0;
-            sideLength++;
+            turn();
+            //steps = 0;
+            //sideLength++;
         }
     }
 }
