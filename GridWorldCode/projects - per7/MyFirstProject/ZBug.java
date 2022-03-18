@@ -13,26 +13,35 @@ public class ZBug extends Bug
 {
     private int steps = 0;
     private int sideLength = 2;
-    
-    
+    private int z;
+
+
     /**
      * @param len of side of box
      */
     public ZBug(int k){
         super(Color.yellow);
         sideLength = k-1;
+        z = 3
+        setDirection(90);
     }
     public void act(){
         if (steps < sideLength && canMove()){
             move();
-            //steps++;
+            steps++;
         }
         else{
+			if(z == 1){
+				turn();
+				turn();
+			}
             turn();
             turn();
             turn();
-            //steps = 0;
-            //sideLength++;
+            steps = 0;
+            if(z <= 0){
+				steps = sideLength+1;
+			}
         }
     }
 }
