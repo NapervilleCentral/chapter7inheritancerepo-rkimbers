@@ -20,6 +20,7 @@ public class Wheel extends Circle
         double increment = (double)360/spokes;
         double i2 = increment;
         double side = 2.0 * Math.PI * radius / 120.0;
+        
         p.up();
         p.move (xPos + radius, yPos - side / 120.0);
         p.setDirection (90);

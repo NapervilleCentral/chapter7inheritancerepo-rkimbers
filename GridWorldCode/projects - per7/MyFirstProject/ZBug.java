@@ -22,7 +22,7 @@ public class ZBug extends Bug
     public ZBug(int k){
         super(Color.yellow);
         sideLength = k-1;
-        z = 3
+        z = 3;
         setDirection(90);
     }
     public void act(){
@@ -31,17 +31,17 @@ public class ZBug extends Bug
             steps++;
         }
         else{
-			if(z == 1){
-				turn();
-				turn();
-			}
+            if(z == 1){
+                turn();
+                turn();
+            }
             turn();
             turn();
             turn();
             steps = 0;
             if(z <= 0){
-				steps = sideLength+1;
-			}
+                steps = sideLength+1;
+            }
         }
     }
 }
