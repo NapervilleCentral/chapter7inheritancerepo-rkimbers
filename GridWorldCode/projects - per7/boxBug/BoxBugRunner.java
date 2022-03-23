@@ -37,9 +37,12 @@ public class BoxBugRunner
         CircleBug me = new CircleBug(10);
         me.setColor(Color.GREEN);
         
-        world.add(new Location(7, 8), alice);
-        world.add(new Location(5, 5), bob);
-        world.add(new Location(2,2), me);
+        //world.add(new Location(7, 8), alice);
+       // world.add(new Location(5, 5), bob);
+        //world.add(new Location(2,2), me);
+        
+        NewBug calvin = new NewBug();
+        world.add(calvin);
         
         world.show();
     }

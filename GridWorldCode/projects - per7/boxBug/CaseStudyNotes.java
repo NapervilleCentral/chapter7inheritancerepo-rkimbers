@@ -70,6 +70,9 @@ public class CaseStudyNotes
         jake.setDirection(jendir);
         
         
+
+        
+        
         /*
         BoxBug alice = new BoxBug(6);
         alice.setColor(Color.ORANGE);

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NewBug
+comment0.text=\r\n\ This\ class\ runs\ a\ world\ that\ contains\ box\ bugs.\ <br\ />\r\n\ This\ class\ is\ not\ tested\ on\ the\ AP\ CS\ A\ and\ AB\ exams.\r\n
+comment1.params=
+comment1.target=NewBug()
+comment1.text=\r\n\ Constructs\ a\ box\ bug\ that\ traces\ a\ square\ of\ a\ given\ side\ length\r\n\ @param\ length\ the\ side\ length\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Moves\ to\ the\ next\ location\ of\ the\ square.\r\n\ gen\ a\ random\ number\ 1-100\r\n\ <45\ moves()\r\n\ <70\ face\ RIGHT\r\n\ <95\ face\ LEFT\r\n\ <100\ face\ BACKWARDS\r\n
+numComments=3
